@@ -1,0 +1,23 @@
+<h1>Please select</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Add to cart</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of inventorylist; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.image }}</td>
+        <td>{{ item.name | titlecase }}</td>
+        <td>
+          <button (click)="addItem(item.name)">Add</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

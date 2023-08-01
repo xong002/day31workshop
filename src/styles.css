@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+table, thead, tbody, th, tr, td {
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
